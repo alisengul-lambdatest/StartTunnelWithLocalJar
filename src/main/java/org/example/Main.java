@@ -23,6 +23,7 @@ public class Main {
     options.put("tunnelName", tunnelName);
     options.put("user", username);
     options.put("key", access_key);
+    options.put("basicAuth", "https://admin:admin@the-internet.herokuapp.com");
     if(params != null)
     {
       List<String> paramsList = List.of(params.split(","));
