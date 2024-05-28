@@ -1,9 +1,11 @@
 package org.example;
 
 import com.lambdatest.tunnel.Tunnel;
+import org.testng.util.TimeUtils;
 
 import java.util.HashMap;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 public class Main {
   public static void main(String[] args) throws Exception {
@@ -30,5 +32,8 @@ public class Main {
       }
     }
     t.start(options);
+    try {
+      TimeUnit.MINUTES.sleep(30);
+    }catch (Exception ignore) {}
   }
 }
