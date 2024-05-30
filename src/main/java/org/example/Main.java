@@ -33,6 +33,7 @@ public class Main {
         options.put(keyValue[0], keyValue[1]);
       }
     }
+    System.out.println("Tunnel options: " + options);
     t.start(options);
     try {
       TimeUnit.MINUTES.sleep(30);
